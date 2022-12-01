@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  airsonic:
+    image: linuxserver/airsonic-advanced:latest
+    restart: unless-stopped
+    volumes:
+      - ${LOCAL_MUSIC_DIR}:/music:ro
+    ports:
+      - "${LOCAL_PORT}:4040"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TIMEZONE}
+    devices:
+      - /dev/snd:/dev/snd
