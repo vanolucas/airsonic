@@ -1,5 +1,6 @@
 [Airsonic](https://airsonic.github.io/) web media streamer.
-[linuxserver/airsonic-advanced Docker image](https://hub.docker.com/r/linuxserver/airsonic-advanced).
+
+[linuxserver/airsonic-advanced](https://hub.docker.com/r/linuxserver/airsonic-advanced) Docker image.
 
 # Build & Run using `docker-compose`
 
@@ -14,6 +15,9 @@ Example:
 ```
 LOCAL_MUSIC_DIR=/home/vanolucas/Music
 LOCAL_PORT=8080
+TIMEZONE=Europe/Brussels
+PUID=1000
+PGID=1000
 ```
 
 Then run `docker-compose` in this directory containing [docker-compose.yml](docker-compose.yml):
@@ -25,7 +29,7 @@ Browse to the container's URL. e.g. [http://localhost:8080/](http://localhost:80
 
 # Use Airsonic
 
-See [Airsonic documentations](https://airsonic.github.io/docs/) for more detail.
+See [Airsonic documentation](https://airsonic.github.io/docs/) for more detail.
 
 # Stop
 
