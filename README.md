@@ -39,4 +39,5 @@ docker-compose down
 
 # TODO
 
+- [ ] add script that constructs the playlist file to the image
 - [ ] construct playlist of all audio files on build
